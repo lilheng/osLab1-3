@@ -8,7 +8,7 @@
 #include <stdbool.h>
 #include "dplist.h"
 
-
+#include <string.h>
 
 /*
  * The real definition of struct list / struct node
@@ -44,6 +44,7 @@ void dpl_free(dplist_t **list) {
         current = next_node; //set current node to the next node
     }
     free(*list);
+    free(current->element);
     *list = NULL;
     //Do extensive testing with valgrind.
 }
@@ -128,6 +129,7 @@ dplist_t *dpl_remove_at_index(dplist_t *list, int index) {
         node_to_remove->prev->next = node_to_remove->next;
     }
     free(node_to_remove);
+    free(node_to_remove -> element);
     return list;
     //To remove the node B, it is needed to remove the pointer that points to  the previous node
     // and the pointer that points to the next node, removing two nodes essentially.
@@ -154,10 +156,10 @@ int dpl_size(dplist_t *list) {
     if( list -> head == NULL) {
         return 0;
     }
-    dplist_node_t *current = list -> head; // current points to the head
-    while (current -> next != NULL) {
+    dplist_node_t *current_node = list -> head; // current points to the head
+    while (current_node -> next != NULL) {
         size ++;
-        current = current -> next;
+        current_node = current_node -> next;
     }
     return size;
 }
@@ -221,7 +223,7 @@ int dpl_get_index_of_element(dplist_t *list, element_t element) {
     }
     dplist_node_t *current_node = list -> head;
     for(int count = 0; count < dpl_size(list); count++) {
-        if( current_node -> element == element) {
+        if(!strcmp(current_node -> element , element) ) {
             return count;
         }
         current_node = current_node -> next;
