@@ -8,6 +8,7 @@
  * dplist_t is a struct containing at least a head pointer to the start of the list;
  */
 typedef struct dplist dplist_t;
+//dplist_t is a convenient way to refer to a double-linked list structure, making your code more readable and maintainable.
 
 typedef struct dplist_node dplist_node_t;
 
