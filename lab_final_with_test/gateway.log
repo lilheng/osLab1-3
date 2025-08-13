@@ -1,0 +1,20 @@
+0 Wed Aug 13 17:29:10 2025 A new data.csv file has been created
+1 Wed Aug 13 17:29:13 2025 Sensor node 15 has opened a new connection
+2 Wed Aug 13 17:29:15 2025 Sensor node 21 has opened a new connection
+3 Wed Aug 13 17:29:17 2025 Sensor node 15 reports it’s too hot (avg temp = 20.045610)
+4 Wed Aug 13 17:29:17 2025 Sensor node 37 has opened a new connection
+5 Wed Aug 13 17:29:18 2025 Sensor node 15 reports it’s too hot (avg temp = 20.036675)
+6 Wed Aug 13 17:29:18 2025 Data insertion from sensor 21 succeeded
+7 Wed Aug 13 17:29:19 2025 Data insertion from sensor 15 succeeded
+8 Wed Aug 13 17:29:19 2025 Data insertion from sensor 37 succeeded
+9 Wed Aug 13 17:29:20 2025 Data insertion from sensor 15 succeeded
+10 Wed Aug 13 17:29:21 2025 Data insertion from sensor 15 succeeded
+11 Wed Aug 13 17:29:22 2025 Sensor node 15 reports it’s too hot (avg temp = 20.006337)
+12 Wed Aug 13 17:29:23 2025 Data insertion from sensor 37 succeeded
+13 Wed Aug 13 17:29:23 2025 Data insertion from sensor 15 succeeded
+14 Wed Aug 13 17:29:24 2025 Data insertion from sensor 15 succeeded
+15 Wed Aug 13 17:29:25 2025 Data insertion from sensor 37 succeeded
+16 Wed Aug 13 17:29:25 2025 Data insertion from sensor 15 succeeded
+17 Wed Aug 13 17:29:27 2025 Data insertion from sensor 15 succeeded
+18 Wed Aug 13 17:29:28 2025 Sensor node 15 has closed the connection
+19 Wed Aug 13 17:29:28 2025 Sensor node 21 has closed the connection
